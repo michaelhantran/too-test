@@ -8,6 +8,7 @@ import Products from './pages/Products';
 import Support from './pages/Support';
 import About from './pages/About';
 import { Page } from './types';
+import TextToVideoApps from "../pages/TextToVideoApps";
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>('Home');
