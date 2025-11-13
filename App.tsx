@@ -7,8 +7,9 @@ import Tools from './pages/Tools';
 import Products from './pages/Products';
 import Support from './pages/Support';
 import About from './pages/About';
-import { Page } from './types';
 import TextToVideoApps from "../pages/TextToVideoApps";
+import { Page } from './types';
+
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>('Home');
@@ -30,6 +31,8 @@ const App: React.FC = () => {
         return <Support />;
       case 'About':
         return <About />;
+      case 'TextToVideo':
+        return <TextToVideoApps />;
       case 'Home':
       default:
         return <Home onNavigate={handleNavigate} />;
