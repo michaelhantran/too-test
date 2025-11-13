@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* About Section */}
                     <div className="md:col-span-2 lg:col-span-1">
-                        <h3 className="text-xl font-bold text-white mb-4">Tim Ve AI Creators</h3>
+                        <h3 className="text-xl font-bold text-white mb-4">Tim Ve Studio</h3>
                         <p className="text-gray-400">
                             Your hub for exploring the latest in AI-driven creativity, from music and art to educational resources and powerful tools.
                         </p>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} Tim Ve AI Creators. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Tim Ve Studio. All rights reserved.</p>
                 </div>
             </div>
         </footer>
