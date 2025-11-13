@@ -60,7 +60,7 @@ const App: React.FC = () => {
                 <section id="main-content" className="py-16 sm:py-24">
                     <div className="text-center mb-12">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight">
-                            Welcome to <span className="text-cyan-400">Tim Ve AI Creators</span>
+                            Welcome to <span className="text-cyan-400">Tim Ve Studio</span>
                         </h1>
                         <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-400">
                             Explore the intersection of creativity and artificial intelligence.
