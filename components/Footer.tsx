@@ -11,6 +11,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     { name: 'Education' },
     { name: 'Tools' },
     { name: 'Products' },
+     { name: 'TextToVideo' },
   ];
 
   return (
