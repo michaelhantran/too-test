@@ -16,7 +16,7 @@ declare global {
   }
 }
 
-const App: React.FC = () => {
+const TextToVideoApps: React.FC = () => {
   const [apiKeySelected, setApiKeySelected] = useState<boolean | null>(null);
   const [storyDescription, setStoryDescription] = useState<string>('');
   const [videoDuration, setVideoDuration] = useState<string>('60');
