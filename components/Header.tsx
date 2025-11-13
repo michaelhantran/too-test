@@ -46,6 +46,9 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
               >
                 {item}
               </button>
+                <button onClick={() => onNavigate('TextToVideo')}>
+  Text to Video
+</button>
             )})}
           </nav>
           <div className="flex items-center">
