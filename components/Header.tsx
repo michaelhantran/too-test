@@ -6,7 +6,7 @@ interface HeaderProps {
   currentPage: Page;
 }
 
-const menuItems: (Page | 'Music')[] = ['Music', 'Education', 'Tools', 'Products', 'Support', 'About', 'TextToVideo' ];
+const menuItems: (Page | 'Music')[] = ['Music', 'Education', 'Tools', 'Products', 'Support', 'About', 'TextToVideo',];
 
 const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
   return (
