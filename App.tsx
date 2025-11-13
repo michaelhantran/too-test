@@ -7,6 +7,7 @@ import Tools from './pages/Tools';
 import Products from './pages/Products';
 import Support from './pages/Support';
 import About from './pages/About';
+import TextToVideoApps from "../pages/TextToVideoApps";
 import { Page } from './types';
 
 
