@@ -1,1 +1,1 @@
-export type Page = 'Home' | 'Education' | 'Tools' | 'Products' | 'Support' | 'About';
+export type Page = 'Home' | 'Education' | 'Tools' | 'Products' | 'Support' | 'About' | 'TextToVideo';
