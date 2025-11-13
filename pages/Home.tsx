@@ -10,6 +10,7 @@ const mainThumbnails: { name: Page | 'Music'; image: string; }[] = [
   { name: 'Education', image: 'https://picsum.photos/seed/education/600/400' },
   { name: 'Tools', image: 'https://picsum.photos/seed/tools/600/400' },
   { name: 'Products', image: 'https://picsum.photos/seed/products/600/400' },
+  { name: 'TextToVideo', image: 'https://picsum.photos/seed/products/600/400' },
 ];
 
 const youtubeVideos = [
