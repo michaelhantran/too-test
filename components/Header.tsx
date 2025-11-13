@@ -6,7 +6,7 @@ interface HeaderProps {
   currentPage: Page;
 }
 
-const menuItems: (Page | 'Music')[] = ['Music', 'Education', 'Tools', 'Products', 'Support', 'About'];
+const menuItems: (Page | 'Music')[] = ['Music', 'Education', 'Tools', 'Products', 'Support', 'About', 'TextToVideo' ];
 
 const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
   return (
@@ -44,12 +44,10 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
                     : 'text-brand-text-muted hover:text-white'
                 }`}
               >
-                {item}
-              </button>
-                <button onClick={() => onNavigate('TextToVideo')}>
-  Text to Video
-</button>
-            )})}
+                {item === 'TextToVideo' ? 'Text to Video' : item}
+                </button>
+              );
+            })}
           </nav>
           <div className="flex items-center">
             <button className="bg-brand-primary text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-brand-secondary transition-all duration-300 transform hover:scale-105">
