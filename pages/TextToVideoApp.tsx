@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { generateStoryboard } from './services/geminiService';
 import { LoadingSpinner, WarningIcon } from './components/icons';
 import type { Storyboard } from './types';
+import { callGemini } from "../services/geminiService";
+import Icons from "../components/icons"; 
 
 // Fix: Define AIStudio interface and use it for window.aistudio to resolve declaration conflict.
 declare global {
