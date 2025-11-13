@@ -6,7 +6,7 @@ interface HeaderProps {
   currentPage: Page;
 }
 
-const menuItems: Page[] = ['Music', 'Education', 'Tools', 'Products', 'Support', 'About'];
+const menuItems: (Page | 'Music')[] = ['Music', 'Education', 'Tools', 'Products', 'Support', 'About'];
 
 const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
   return (
@@ -20,7 +20,21 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
             Tim Ve Studio
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item) => (
+            {menuItems.map((item) => {
+              if (item === 'Music') {
+                return (
+                  <a
+                    key={item}
+                    href="https://www.youtube.com/@TimVeMusic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-medium transition-colors duration-300 text-brand-text-muted hover:text-white"
+                  >
+                    {item}
+                  </a>
+                );
+              }
+              return (
               <button
                 key={item}
                 onClick={() => onNavigate(item)}
@@ -32,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
               >
                 {item}
               </button>
-            ))}
+            )})}
           </nav>
           <div className="flex items-center">
             <button className="bg-brand-primary text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-brand-secondary transition-all duration-300 transform hover:scale-105">

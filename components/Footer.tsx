@@ -6,7 +6,7 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
-  const quickLinks: { name: Page; }[] = [
+  const quickLinks: { name: Page | 'Music' }[] = [
     { name: 'Music' },
     { name: 'Education' },
     { name: 'Tools' },
@@ -29,11 +29,26 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {quickLinks.map(link => (
-                <li key={link.name}>
-                  <button onClick={() => onNavigate(link.name)} className="hover:text-brand-primary transition-colors duration-300 text-sm">{link.name}</button>
-                </li>
-              ))}
+              {quickLinks.map(link => {
+                if (link.name === 'Music') {
+                  return (
+                    <li key={link.name}>
+                      <a href="https://www.youtube.com/@TimVeMusic" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors duration-300 text-sm">
+                        {link.name}
+                      </a>
+                    </li>
+                  );
+                }
+                // FIX: Added an else block to ensure proper type narrowing for the `link.name` property.
+                // This resolves the TypeScript error where `link.name` was not being correctly identified as type `Page`.
+                else {
+                  return (
+                    <li key={link.name}>
+                      <button onClick={() => onNavigate(link.name)} className="hover:text-brand-primary transition-colors duration-300 text-sm">{link.name}</button>
+                    </li>
+                  );
+                }
+              })}
             </ul>
           </div>
           

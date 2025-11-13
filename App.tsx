@@ -2,7 +2,6 @@ import React, { useState, useCallback } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Music from './pages/Music';
 import Education from './pages/Education';
 import Tools from './pages/Tools';
 import Products from './pages/Products';
@@ -20,8 +19,6 @@ const App: React.FC = () => {
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'Music':
-        return <Music onNavigate={handleNavigate} />;
       case 'Education':
         return <Education onNavigate={handleNavigate} />;
       case 'Tools':
