@@ -1,5 +1,5 @@
-
 {
   "name": "Tim Ve Studio",
-  "description": "A homepage for Tim Ve Studio, showcasing music, educational content, tools, products, and latest YouTube videos."
+  "description": "A modern, interactive home page for Tim Ve Studio, showcasing music, educational content, tools, products, and news. Navigate through different sections and discover the latest updates and offerings.",
+  "requestFramePermissions": []
 }
